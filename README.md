@@ -2,7 +2,7 @@
 
 Simple Catering Form.  Sections are modular and can be updated by changing the Data File
 
-Built using jQuery and C#.  Backend functionality wont work since this isn't hosted. You'll get an error "something went wrong" when submitting the  form
+Built using jQuery and C#.  Backend functionality wont work. I left out the system files.  You'll get an error "something went wrong" when submitting the  form
 
 Open Default.HTML for the main page
 
