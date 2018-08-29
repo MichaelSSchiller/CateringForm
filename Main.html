@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="Assets/CSS/Styles.css" rel="stylesheet" />
+    <script src="Assets/JS/jQuery.js"></script>
+    <script src="Data/Data.js"></script>
+    <script src="Assets/JS/Scripts.js"></script>
+</head>
+<body>
+    <!-- Contact Info -->
+ <table id="Start" width="1024" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+   <td align="center"><img src="Assets/Images/banner.jpg" width="1024" height="114" border="0" /></td>
+  </tr>
+  <tr>
+   <td align="center">
+    <table width="53%" border="0" cellpadding="4" cellspacing="0">
+     <tr>
+      <td>
+       <strong>NOTES:</strong><br />
+       All orders must be submitted at least 5 business days prior to event.<br />
+       Cancellations received less than 24 hours prior to event may be subject to a charge.<br />
+       Changes to orders must be received at least 48 hours prior to event.<br />
+       There is a $10 delivery and clean up charge on all orders.<br />
+       Paper goods are included in the price.
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+  <tr>
+   <td align="left"></td>
+  </tr>
+  <tr>
+   <td align="center">
+   <form id="form1" name="form1"> <!-- method="post" action="shc_proc.asp" -->
+   <table width="1024" border="0" cellspacing="0" cellpadding="0"> 
+    <tr>
+     <td align="center">
+      <table width="96%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td height="30" align="left" valign="middle"><strong>Requester Information &nbsp;</strong><strong class="required">*</strong> <em class="requiredlt">- required</em></td>
+       </tr>
+      </table>
+      <table width="96%" border="1" cellspacing="0" cellpadding="4">
+       <tr>
+        <td height="28" align="left" valign="middle">
+         <strong class="required">*</strong>Full Name:
+         <input name="requester" type="text" id="requester" size="36" maxlength="44" />
+        </td>
+        <td height="28" align="left" valign="middle">
+         <strong class="required">*</strong>Email Address:
+         <input name="email1" type="text" id="email1" size="40" maxlength="40" />
+        </td>
+        <td align="left" valign="middle">
+         <strong class="required">*</strong>Phone:
+         <input name="phone1" type="text" id="phone1" size="14" maxlength="14" />
+        </td>
+       </tr>
+      </table>
+      <table width="96%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td height="30" align="left" valign="middle"><strong>Contact Person </strong><em class="requiredlt">(if different from Requester)</em></td>
+       </tr>
+      </table>
+      <table width="96%" border="1" cellspacing="0" cellpadding="4">
+       <tr>
+        <td height="28" align="left" valign="middle">
+         Full Name:
+         <input name="contact" type="text" id="contact" size="36" maxlength="44" />
+        </td>
+        <td height="28" align="left" valign="middle">
+         Email Address:
+         <input name="email2" type="text" id="email2" size="40" maxlength="40" />
+        </td>
+        <td align="left" valign="middle">
+         Phone:
+         <input name="phone2" type="text" id="phone2" size="14" maxlength="14" />
+        </td>
+       </tr>
+      </table>
+      <table width="96%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td height="30" align="left" valign="middle"><strong>Event Information</strong><strong> &nbsp;</strong><strong class="required">*</strong> <em class="requiredlt">- required</em></td>
+       </tr>
+      </table>
+      <table width="96%" border="1" cellspacing="0" cellpadding="4">
+       <tr>
+        <td height="28" colspan="2" align="left" valign="middle">
+         <strong class="required">*</strong>Event Title:
+         <input name="eventtitle" type="text" id="eventtitle" size="36" maxlength="44" />
+        </td>
+        <td align="left" valign="middle">
+         <strong class="required">*</strong>Location:
+         <input name="eventloc" type="text" id="eventloc" size="40" maxlength="40" />
+        </td>
+       </tr>
+       <tr>
+        <td height="28" align="left" valign="middle">
+         <strong class="required">*</strong>Event Date:
+         <input name="eventdate" type="text" id="eventdate" size="10" maxlength="10" />
+        </td>
+        <td height="28" align="left" valign="middle">
+         <strong class="required">*</strong>Delivery Time:
+         <input name="deliverytime" type="text" id="deliverytime" size="12" maxlength="12" />
+        </td>
+        <td align="left" valign="middle">
+         <strong class="required">*</strong>Clean Up Time:
+         <input name="cleanuptime" type="text" id="cleanuptime" size="12" maxlength="12" />
+        </td>
+       </tr>
+      </table>
+      <table width="96%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td height="30" align="left" valign="middle"><strong>Payment Information</strong><em></em></td>
+       </tr>
+      </table>
+      <table width="96%" border="1" cellspacing="0" cellpadding="4">
+       <tr>
+        <td width="30%" height="28" align="left" valign="middle">
+         Cost Center:
+         <input name="costcenter" type="text" id="costcenter" size="16" maxlength="16" />
+        </td>
+        <td width="70%" height="28" align="left" valign="middle">
+         <input name="creditcard" type="checkbox" id="creditcard" value="1" />
+         Credit Card - To pay by credit card, submit your order and call <strong>617.952.5140</strong> to pay by phone.
+        </td>
+       </tr>
+      </table>
+      <br />
+                                <!-- Menu Items Start -->
+      <table width="96%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td height="30" align="center" valign="middle" bgcolor="#008AAF"><strong class="ttl">MENU OPTIONS</strong></td>
+       </tr>
+      </table> 
+      
+         
+           <table width="96%" border="0" cellspacing="0" cellpadding="4">
+            <tr>
+             <td height="30" align="left" valign="middle" bgcolor="#333333"><strong class="ttl">BREAKFAST</strong></td>
+            </tr>
+           </table>
+           <table width='96%' border='1' cellspacing='0' cellpadding='4' id="BREAKFAST">
+               <!-- Added in the script -->
+           </table>
+
+         <table width="96%" border="0" cellspacing="0" cellpadding="4">
+             <tr>
+                 <td height="30" align="left" valign="middle" bgcolor="#333333"><strong class="ttl">LUNCH / DINNER</strong></td>
+             </tr>
+         </table>
+         <table width="96%" border="1" cellspacing="0" cellpadding="4" id="LUNCHandDINNER">
+             <!-- Added in the script -->
+         </table>
+          
+         <table width="96%" border="0" cellspacing="0" cellpadding="4">
+             <tr>
+                 <td height="30" align="left" valign="middle" bgcolor="#333333"><strong class="ttl">A LA CARTE / MEETING BREAK - Includes paper goods & utensils as needed</strong></td>
+             </tr>
+         </table>
+         <table width="96%" border="1" cellspacing="0" cellpadding="4" id="ALACARTE">
+             <!-- Added in the script -->
+         </table>
+
+         <table width="96%" border="0" cellspacing="0" cellpadding="4">
+             <tr>
+                 <td width="50%" height="30" align="left" valign="middle" bgcolor="#333333"><strong class="ttl">ICE CREAM</strong></td>
+                 <td align="left" valign="middle" bgcolor="#333333"><strong class="ttl">CAKE - <span class="ttlsmall">Select size, flavor &amp; frosting. Call for pricing - 617.952.5140</span></strong></td>
+             </tr>
+         </table>
+         <table width="96%" border="1" cellspacing="0" cellpadding="4" id="DESSERT">
+             <!-- Added in the script -->
+         </table>
+
+         <table width="96%" border="1" 	border-top="0" cellspacing="0"><tr><td align="center"><b>Grand Total: </b><input name='grandTotal' type='text' id='grandTotal' disabled='disabled' value='$'></td></tr></table>
+         <br />
+         <input type="submit" name="submit" id="submit" value="Submit Order">
+
+
+                                <!-- Menu Items End -->
+   </table>
+  </form> <!-- id="form1" -->
+  </td>
+ </tr>
+</table> <!-- id="Start" -->
+</body>
+</html>
